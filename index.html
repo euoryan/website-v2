@@ -1,162 +1,175 @@
-<html><head><base href="https://ryanportfolio.com/" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ryan Bernardo - Desenvolvedor & Designer</title>
-<style>
-  :root {
-    --primary-color: #dc3545;
-    --background-color: #ffffff;
-    --text-color: #202124;
-    --secondary-background: #f8f9fa;
-    --border-color: #dfe1e5;
-  }
+<html>
+<head>
+  <base href="https://ryanportfolio.com/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Bernardo - Desenvolvedor & Designer</title>
+  <style>
+    :root {
+      --primary-color: #dc3545;
+      --background-color: #ffffff;
+      --text-color: #202124;
+      --secondary-background: #f8f9fa;
+      --border-color: #dfe1e5;
+    }
 
-  .dark-theme {
-    --primary-color: #ff4757;
-    --background-color: #202124;
-    --text-color: #e8eaed;
-    --secondary-background: #303134;
-    --border-color: #5f6368;
-  }
+    .dark-theme {
+      --primary-color: #ff4757;
+      --background-color: #202124;
+      --text-color: #e8eaed;
+      --secondary-background: #303134;
+      --border-color: #5f6368;
+    }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
-  }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-
-  header {
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    opacity: 0.8;
-    margin-bottom: 1rem;
-  }
-
-  .social-links {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .social-links a {
-    opacity: 0.8;
-    transition: opacity 0.3s;
-  }
-
-  .social-links a:hover {
-    opacity: 1;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .section {
-    margin-bottom: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-
-  p {
-    margin-bottom: 1rem;
-  }
-
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
-
-  .skill {
-    background-color: var(--secondary-background);
-    color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    border: 1px solid var(--border-color);
-  }
-
-  .btn {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .btn:hover {
-    background-color: #b02a37;
-  }
-
-  .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: var(--secondary-background);
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-
-  .theme-toggle:hover {
-    background-color: var(--primary-color);
-    color: white;
-  }
-
-  @media (max-width: 768px) {
     .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 1rem;
     }
-    
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
     }
-    
+
     .subtitle {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      color: var(--text-color);
+      opacity: 0.8;
+      margin-bottom: 1rem;
     }
-  }
-</style>
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-links a {
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .social-links a:hover {
+      opacity: 1;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .section {
+      background-color: var(--secondary-background);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .skill {
+      background-color: var(--background-color);
+      color: var(--primary-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid var(--border-color);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #b02a37;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: var(--secondary-background);
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .subtitle {
+        font-size: 1rem;
+      }
+      
+      .skills {
+        justify-content: center;
+      }
+
+      .skill {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
